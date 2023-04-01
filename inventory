@@ -1,4 +1,16 @@
+[web_servers]
 wbs-p4.home.loc
+
+[db_servers]
 ns2-p3.home.loc
 wks01-ubuntu.home.loc
+
+[file_servers]
+wks01-ubuntu.home.loc
+
+[workstations]
 wks01-alma.home.loc
+
+[name_servers]
+ns2-p3.home.loc
+wbs-p4.home.loc
