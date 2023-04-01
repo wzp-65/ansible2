@@ -29,7 +29,7 @@
       groups: root
 
 
-  - name: add ssh key for wzpoplaski
+  - name: add ssh key for asmith
     tags: always
     authorized_key:
       user: asmith

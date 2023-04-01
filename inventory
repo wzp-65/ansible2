@@ -1,5 +1,6 @@
 [web_servers]
 wbs-p4.home.loc
+ns2-p3.home.loc
 
 [db_servers]
 ns2-p3.home.loc
