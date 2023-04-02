@@ -1,0 +1,14 @@
+- name: install unzip & nmap
+  package:
+    name: 
+      - unzip
+      - nmap 
+
+- name: install terraform
+  unarchive:
+    src: https://releases.hashicorp.com/terraform/1.4.2/terraform_1.4.2_linux_arm64.zip
+    dest: /usr/local/bin
+    remote_src: yes
+    mode: 0755
+    owner: root
+    group: root      

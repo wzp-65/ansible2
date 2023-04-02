@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+
+   - name: install bind for Alma
+     dnf:
+       name:
+        - bind
+       state: latest
+       update_cache: yes
+     when: ansible_distribution == "AlmaLinux"
