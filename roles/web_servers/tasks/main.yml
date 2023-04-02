@@ -32,15 +32,7 @@
     regexp: '^ServerAdmin'
     line: ServerAdmin wzpoplaski@startmail.com
   when: ansible_distribution == "AlmaLinux"
-  register: httpd
-
-- name: restart httpd (AlmaLinux)
-  tags: apache,AlmaLinux,httpd
-  service:
-    name: httpd
-    state: restarted
-  when: httpd.changed
-
+  notify: restart_apache
 
 
 - name: copy file to destintion
